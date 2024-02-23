@@ -1,0 +1,32 @@
+﻿<Window x:Class="Zubna_ordinacija.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zubna_ordinacija"
+        mc:Ignorable="d"
+        Title="Zubna ordinacija - Teodora" Height="500" Width="900">
+
+    <Grid Background="BlanchedAlmond" RibbonTwoLineText.HasTwoLines="True" OpacityMask="Black" >
+        <DataGrid x:Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="auto" IsReadOnly="True" 
+                  Background="AliceBlue" AlternatingRowBackground="LightSteelBlue" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnKorisnici" Background="RosyBrown" BorderBrush="Azure" Content="Korisnici" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="75" Click="btnKorisnici_Click" />
+            <Button x:Name="btnPacijenti" Background="RosyBrown" BorderBrush="Azure" Content="Pacijenti" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnPacijenti_Click" />
+            <Button x:Name="btnTretmani" Background="RosyBrown" BorderBrush="Azure" Content="Tretmani" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnTretmani_Click" />
+            <Button x:Name="btnTermini" Background="RosyBrown" BorderBrush="Azure" Content="Termini" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnTermini_Click" />
+            <Button x:Name="btnEvidencije" Background="RosyBrown" BorderBrush="Azure" Content="Evidencije" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnEvidencije_Click" />
+            <Button x:Name="btnDijagnoze" Background="RosyBrown" BorderBrush="Azure" Content="Dijagnoze" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnDijagnoze_Click" />
+            <Button x:Name="btnOsiguranja" Background="RosyBrown" BorderBrush="Azure" Content="Osiguranja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnOsiguranja_Click"/>
+            <Button x:Name="btnRacuni" Background="RosyBrown" BorderBrush="Azure" Content="Racuni" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnRacuni_Click"/>
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="40" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Background="DarkSeaGreen" BorderBrush="DarkGreen" Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnDodaj_Click" />
+            <Button x:Name="btnIzmeni" Background="DarkSeaGreen" BorderBrush="DarkGreen" Content="Izmeni" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnIzmeni_Click" />
+            <Button x:Name="btnObrisi" Background="DarkSeaGreen" BorderBrush="DarkGreen" Content="Obrisi" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="40" Click="btnObrisi_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
